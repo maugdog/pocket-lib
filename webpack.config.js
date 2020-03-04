@@ -38,7 +38,6 @@ module.exports = {
     'esprima': 'esprima', // Note that esprima must be imported as commonjs and NOT commonjs2!!!
     'react': 'react',
     'react-dom': 'reactDOM',
-    'react-router-dom': 'reactRouterDOM',
-    'history': 'history'
+    'react-router-dom': 'reactRouterDOM'
   }
 };

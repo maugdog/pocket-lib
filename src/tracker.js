@@ -59,6 +59,7 @@ export class Tracker {
     if(this.sendToCustomService && !this.blacklisted) {
       this.isSyncing = true;
 
+      this.logMessage('Tracker is sending batch:', batch);
       this.sendToCustomService(batch)
         .then(result => {
           this.isSyncing = false;
@@ -68,6 +69,8 @@ export class Tracker {
           this.isSyncing = false;
           if(callback) { callback(err); }
         });
+    } else {
+      this.logMessage(`Tracker is blacklisted`);
     }
   }
 

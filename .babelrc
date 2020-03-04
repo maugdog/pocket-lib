@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    ["@babel/plugin-proposal-class-properties", { "loose": true }]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "@babel/transform-react-constant-elements",
+        "@babel/transform-react-inline-elements"
+      ]
+    }
+  }
+}

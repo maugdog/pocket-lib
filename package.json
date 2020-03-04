@@ -1,0 +1,59 @@
+{
+  "name": "pocket-lib",
+  "version": "1.0.0",
+  "description": "Library of shared functions and modules for the Pocket platform.",
+  "main": "build/pocket-lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "profile": "webpack --config ./webpack.config.js --profile --json > stats.json\nwebpack-bundle-analyzer stats.json build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maugdog/pocket-lib.git"
+  },
+  "author": "Pocket, Inc.",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/maugdog/pocket-lib/issues"
+  },
+  "homepage": "https://github.com/maugdog/pocket-lib#readme",
+  "browserslist": [
+    "last 1 version",
+    "not dead",
+    "> 0.2%"
+  ],
+  "peerDependencies": {
+    "esprima": "^4.0.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-router-dom": "^5.1.2",
+    "history": "^4.10.1"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "7.8.3",
+    "@babel/preset-env": "7.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.6",
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/plugin-transform-react-constant-elements": "7.8.3",
+    "@babel/plugin-transform-react-inline-elements": "7.8.3",
+    "@babel/preset-react": "7.8.3",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.0.6",
+    "del": "5.1.0",
+    "eslint-plugin-react": "7.18.3",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "7.0.1",
+    "gulp-concat": "2.6.1",
+    "gulp-eslint": "6.0.0",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "4.0.2",
+    "path": "0.12.7",
+    "webpack": "4.41.6",
+    "webpack-bundle-analyzer": "3.6.0",
+    "webpack-cli": "3.3.11",
+    "webpack-stream": "5.2.1"
+  }
+}

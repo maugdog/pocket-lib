@@ -17,9 +17,7 @@ module.exports = {
   devtool: 'none',
   resolve: {
     alias: {
-      src: path.resolve(__dirname, 'src/'),
-      react: path.resolve('./node_modules/react'),
-      history: path.resolve('./node_modules/history')
+      src: path.resolve(__dirname, 'src/')
     }
   },
   module: {

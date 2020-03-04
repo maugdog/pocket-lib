@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { createBrowserHistory } from 'history';
+// import { createBrowserHistory } from 'history';
 import tracker from 'src/tracker';
 
 /**
@@ -13,13 +13,13 @@ import tracker from 'src/tracker';
   */
 export const useTracking = (blacklisted, sendToCustomService, debug) => {
   useEffect(() => {
-    const history = createBrowserHistory();
+    // const history = createBrowserHistory();
     tracker.debug = debug;
     tracker.blacklisted = blacklisted;
     tracker.sendToCustomService = sendToCustomService;
 
     // Track the initial page load
-    tracker.page(history.location.pathname);
+    // tracker.page(history.location.pathname);
 
     // Listen for route changes
     // const unlisten = history.listen(location => tracker.page(location.pathname));

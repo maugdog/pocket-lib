@@ -17,16 +17,19 @@ export const useTracking = (history, blacklisted, sendToCustomService, debug) =>
     tracker.blacklisted = blacklisted;
     tracker.sendToCustomService = sendToCustomService;
 
-    // Track the initial page load
-    tracker.page(history.location.pathname);
+    let unlisten = null;
+    if(history) {
+      // Track the initial page load
+      tracker.page(history.location.pathname);
 
-    // Listen for route changes
-    const unlisten = history.listen(location => tracker.page(location.pathname));
+      // Listen for route changes
+      unlisten = history.listen(location => tracker.page(location.pathname));
+    }
 
     // Cleanup when the App unmounts...
     return () => {
       tracker.stop();
-      unlisten();
+      if(unlisten) { unlisten(); }
     };
   }, []);
 };

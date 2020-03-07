@@ -115,6 +115,8 @@ export class Tracker {
       if(typeof ga !== 'undefined') { ga('send', 'event', 'Site', name); }
       if(typeof mixpanel !== 'undefined') { mixpanel.track(name, data); }
       this.logMessage(`Tracking event: "${name}" with data: `, data);
+    } else {
+      this.logMessage(`Tracker is blacklisted`);
     }
   }
 
@@ -135,6 +137,8 @@ export class Tracker {
 
       if(typeof mixpanel !== 'undefined') { mixpanel.track('Page View', { url }); }
       this.logMessage(`Tracking "$page" event: ${url}`);
+    } else {
+      this.logMessage(`Tracker is blacklisted`);
     }
   }
 }

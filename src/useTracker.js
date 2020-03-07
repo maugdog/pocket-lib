@@ -16,7 +16,8 @@ export const useTracking = (history, blacklisted, sendToCustomService, debug) =>
     tracker.debug = debug;
     tracker.blacklisted = blacklisted;
     tracker.sendToCustomService = sendToCustomService;
-    tracker.start();
+    if(sendToCustomService) { tracker.start(); }
+
 
     let unlisten = null;
     if(history) {

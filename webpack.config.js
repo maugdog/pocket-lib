@@ -6,7 +6,11 @@ module.exports = {
   entry: {
     'pocket-lib': path.resolve(__dirname, 'src/index.js'),
     'tracker': path.resolve(__dirname, 'src/tracker.js'),
-    'useTracker': path.resolve(__dirname, 'src/useTracker.js')
+    'Evaluator': path.resolve(__dirname, 'src/Evaluator.js'),
+    'base64': path.resolve(__dirname, 'src/base64.js'),
+    'useTracker': path.resolve(__dirname, 'src/hooks/useTracker.js'),
+    'useScrollToTopOnNewLocation': path.resolve(__dirname, 'src/hooks/useScrollToTopOnNewLocation.js'),
+    'useQueryString': path.resolve(__dirname, 'src/hooks/useQueryString.js')
   },
   output: {
     path: path.resolve(__dirname, 'build/'),
@@ -17,7 +21,8 @@ module.exports = {
   devtool: 'none',
   resolve: {
     alias: {
-      src: path.resolve(__dirname, 'src/')
+      src: path.resolve(__dirname, 'src/'),
+      hooks: path.resolve(__dirname, 'src/hooks')
     }
   },
   module: {
@@ -37,7 +42,7 @@ module.exports = {
   externals: {
     'esprima': 'esprima', // Note that esprima must be imported as commonjs and NOT commonjs2!!!
     'react': 'react',
-    'react-dom': 'reactDOM',
-    'react-router-dom': 'reactRouterDOM'
+    'react-dom': 'react-dom',
+    'react-router-dom': 'react-router-dom'
   }
 };

@@ -22,10 +22,10 @@ class TelephoneType extends QuestionType {
     if(props.defaultValue) {
       defaultValue = props.defaultValue.replace(/\s/g, '-').replace(/[\(\)]/g, '').split('-');
     } else if(props.question.default) {
-      defaultValue = props.question.default
+      defaultValue = props.question.default;
     } else {
       defaultValue = ['','',''];
-    };
+    }
     const joinedDefaultValue = defaultValue.join('-');
     const isValid = this.validateValue(joinedDefaultValue);
     this.state = {

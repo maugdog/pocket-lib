@@ -24,10 +24,10 @@ class ZipCodeType extends QuestionType {
     if(props.defaultValue) {
       defaultValue = props.defaultValue.split('');
     } else if(props.question.default) {
-      defaultValue = props.question.default
+      defaultValue = props.question.default;
     } else {
       defaultValue = ['','','','',''];
-    };
+    }
     const isValid = this.validateValue(defaultValue.join(''));
     this.state = {
       value: isValid ? defaultValue.join('') : null,

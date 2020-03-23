@@ -72,7 +72,7 @@ class GroupType extends QuestionType {
     const accumulated = {
       values: { ...wizardState.values, ...(wizardState.potential ? wizardState.potential.values : {}) },
       calculations: { ...wizardState.calculations, ...(wizardState.potential ? wizardState.potential.calculations : {}) }
-    }
+    };
 
     let isFirst = true;
     for(const subquestion of this.props.question.questions) {

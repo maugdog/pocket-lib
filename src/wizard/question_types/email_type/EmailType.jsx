@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import memoize from 'memoizee';
 import { withWizardStateContext } from 'src/wizard/WizardStateContext';
 import { withClassSet } from 'src/wizard/lib/classSetHelpers';
-import { isEmail } from 'validator/lib/isEmail';
+import isEmail from 'validator/lib/isEmail';
 
 class EmailType extends QuestionType {
   constructor(props) {

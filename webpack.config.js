@@ -5,6 +5,7 @@ module.exports = {
   mode: 'production',
   entry: {
     'pocket-lib': path.resolve(__dirname, 'src/index.js'),
+    'wizard': path.resolve(__dirname, 'src/wizard/Wizard.jsx'),
     'tracker': path.resolve(__dirname, 'src/tracker.js'),
     'Evaluator': path.resolve(__dirname, 'src/Evaluator.js'),
     'base64': path.resolve(__dirname, 'src/base64.js'),
@@ -23,7 +24,8 @@ module.exports = {
     alias: {
       src: path.resolve(__dirname, 'src/'),
       hooks: path.resolve(__dirname, 'src/hooks')
-    }
+    },
+    extensions: ['.js', '.jsx']
   },
   module: {
     rules: [

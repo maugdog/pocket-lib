@@ -1,0 +1,93 @@
+$desktop-base-size: 10px;
+$mobile-base-size: 8px;
+
+html {
+  @extend %txt-body-sm;
+}
+
+button, input, select, textarea, .pure-g [class *= "pure-u"] {
+  font-family: inherit !important;
+}
+
+@mixin txt-raleway {
+  font-family: 'Raleway', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+@mixin txt-raleway-bold {
+  font-family: 'Raleway', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+%txt-raleway-bold { @include txt-raleway-bold; }
+
+%txt-raleway { @include txt-raleway; }
+
+/* Mixins */
+@mixin txt-10 { font-size: 1rem; }
+@mixin txt-title-xs {
+  @include txt-raleway-bold;
+  font-size: 1.4rem;
+}
+@mixin txt-title-sm {
+  @include txt-raleway-bold;
+  font-size: 1.8rem;
+}
+@mixin txt-title-md {
+  @include txt-raleway-bold;
+  font-size: 2.4rem;
+}
+@mixin txt-title-lg {
+  @include txt-raleway-bold;
+  font-size: 3.2rem;
+}
+@mixin txt-title-xl {
+  @include txt-raleway-bold;
+  font-size: 4.4rem;
+}
+@mixin txt-body-xs {
+  @include txt-raleway;
+  font-size: 1.2rem;
+}
+@mixin txt-body-sm {
+  @include txt-raleway;
+  font-size: 1.5rem;
+}
+@mixin txt-body-md {
+  @include txt-raleway;
+  font-size: 1.7rem;
+}
+@mixin txt-body-lg {
+  @include txt-raleway;
+  font-size: 2.4rem;
+}
+
+/* Placehoders */
+%txt-10 { @include txt-10; }
+%txt-title-xs { @include txt-title-xs; }
+%txt-title-sm { @include txt-title-sm; }
+%txt-title-md { @include txt-title-md; }
+%txt-title-lg { @include txt-title-lg; }
+%txt-title-xl { @include txt-title-xl; }
+%txt-body-xs { @include txt-body-xs; }
+%txt-body-sm { @include txt-body-sm; }
+%txt-body-md { @include txt-body-md; }
+%txt-body-lg { @include txt-body-lg; }
+
+/* Classes */
+.txt-10 { @extend %txt-10; }
+.txt-title-xs { @extend %txt-title-xs; }
+.txt-title-sm { @extend %txt-title-sm; }
+.txt-title-md { @extend %txt-title-md; }
+.txt-title-lg { @extend %txt-title-lg; }
+.txt-title-xl { @extend %txt-title-xl; }
+.txt-body-xs { @extend %txt-body-xs; }
+.txt-body-sm { @extend %txt-body-sm; }
+.txt-body-md { @extend %txt-body-md; }
+.txt-body-lg { @extend %txt-body-lg; }

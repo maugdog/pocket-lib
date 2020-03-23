@@ -1,0 +1,39 @@
+.wizard {
+  .wizard-question {
+    .wizard-input-label {
+      display: block;
+      margin-bottom: 6px;
+      @extend %txt-title-xs;
+
+      &.invalid { color: $red; }
+    }
+
+    .wizard-input {
+      display: block;
+      width: 100%;
+      max-width: 150px;
+      background-color: #F8F8F8;
+
+      @extend %border-radius-std;
+
+      &:focus {
+        @extend %box-shadow-light;
+      }
+
+      &.invalid { border-color: $red; }
+    }
+
+    .wizard-group-cta-wrapper {
+      position: relative;
+
+      .wizard-next-button {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 0px;
+      }
+    }
+  }
+}

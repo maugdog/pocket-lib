@@ -1,0 +1,238 @@
+.wizard .wizard-question .wizard-input, .wizard-select-type .wizard-select-option .wizard-select-option-card {
+  border-radius: 3px; }
+
+.wizard-select-type .wizard-select-option .wizard-select-option-card:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); }
+
+.wizard .wizard-question .wizard-input:focus, .wizard-select-type .wizard-select-option .wizard-select-option-card {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
+
+.hidden {
+  display: none !important; }
+
+@media screen and (max-width: 35.49em) {
+  .hidden-xs {
+    display: none !important; } }
+
+@media screen and (max-width: 47.99em) {
+  .hidden-sm-down {
+    display: none !important; } }
+
+@media screen and (max-width: 63.99em) {
+  .hidden-md-down {
+    display: none !important; } }
+
+@media screen and (max-width: 79.99em) {
+  .hidden-lg-down {
+    display: none !important; } }
+
+@media screen and (min-width: 80em) {
+  .hidden-xl {
+    display: none !important; } }
+
+@media screen and (min-width: 64em) {
+  .hidden-lg-up {
+    display: none !important; } }
+
+@media screen and (max-width: 48em) {
+  .hidden-md-up {
+    display: none !important; } }
+
+@media screen and (max-width: 35.5em) {
+  .hidden-sm-up {
+    display: none !important; } }
+
+button, input, select, textarea, .pure-g [class*="pure-u"] {
+  font-family: inherit !important; }
+
+/* Mixins */
+/* Placehoders */
+.txt-10 {
+  font-size: 1rem; }
+
+.txt-title-xs, .wizard .wizard-question .wizard-input-label {
+  font-family: 'Raleway', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-size: 1.4rem; }
+
+.txt-title-sm, .wizard-select-type .wizard-select-option .wizard-select-option-card .wizard-select-option-footer .wizard-select-option-title {
+  font-family: 'Raleway', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-size: 1.8rem; }
+
+.txt-title-md {
+  font-family: 'Raleway', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-size: 2.4rem; }
+
+.txt-title-lg {
+  font-family: 'Raleway', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-size: 3.2rem; }
+
+.txt-title-xl {
+  font-family: 'Raleway', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-size: 4.4rem; }
+
+.txt-body-xs {
+  font-family: 'Raleway', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  letter-spacing: normal;
+  font-size: 1.2rem; }
+
+html, .txt-body-sm, .wizard-select-type .wizard-select-option .wizard-select-option-card .wizard-select-option-footer .wizard-select-option-subtitle {
+  font-family: 'Raleway', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  letter-spacing: normal;
+  font-size: 1.5rem; }
+
+.txt-body-md {
+  font-family: 'Raleway', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  letter-spacing: normal;
+  font-size: 1.7rem; }
+
+.txt-body-lg {
+  font-family: 'Raleway', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  letter-spacing: normal;
+  font-size: 2.4rem; }
+
+/* Classes */
+.wizard .wizard-question .wizard-input-label {
+  display: block;
+  margin-bottom: 6px; }
+  .wizard .wizard-question .wizard-input-label.invalid {
+    color: #FF0000; }
+
+.wizard .wizard-question .wizard-input {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  background-color: #F8F8F8; }
+  .wizard .wizard-question .wizard-input.invalid {
+    border-color: #FF0000; }
+
+.wizard .wizard-question .wizard-group-cta-wrapper {
+  position: relative; }
+  .wizard .wizard-question .wizard-group-cta-wrapper .wizard-next-button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 0px; }
+
+.wizard-select-type .wizard-select-option {
+  padding: 0px 6px 0px 0px; }
+  .wizard-select-type .wizard-select-option .wizard-select-option-card {
+    width: 100%;
+    max-width: 200px;
+    min-height: 100%;
+    overflow: hidden;
+    background: #F9F9F9;
+    cursor: pointer;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out; }
+    .wizard-select-type .wizard-select-option .wizard-select-option-card .wizard-select-option-body {
+      position: relative;
+      width: 100%;
+      height: 0px;
+      padding-top: 100%; }
+      .wizard-select-type .wizard-select-option .wizard-select-option-card .wizard-select-option-body .wizard-select-option-img {
+        position: absolute;
+        top: 0px;
+        width: 100%; }
+    .wizard-select-type .wizard-select-option .wizard-select-option-card .wizard-select-option-footer {
+      padding: 10px 4px; }
+      .wizard-select-type .wizard-select-option .wizard-select-option-card .wizard-select-option-footer .wizard-select-option-subtitle {
+        margin-top: 6px; }
+  @media screen and (max-width: 47.99em) {
+    .wizard-select-type .wizard-select-option {
+      padding: 0px 0px 10px 0px; }
+      .wizard-select-type .wizard-select-option .wizard-select-option-card {
+        display: table;
+        max-width: none;
+        max-height: none;
+        height: 100px; }
+        .wizard-select-type .wizard-select-option .wizard-select-option-card .wizard-select-option-body {
+          display: table-cell;
+          width: 100px;
+          height: 100px;
+          padding-top: 0px; }
+        .wizard-select-type .wizard-select-option .wizard-select-option-card .wizard-select-option-footer {
+          display: table-cell;
+          padding: 10px; }
+          .wizard-select-type .wizard-select-option .wizard-select-option-card .wizard-select-option-footer .wizard-select-option-title {
+            font-family: 'Raleway', sans-serif;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            font-weight: 500;
+            letter-spacing: normal;
+            font-size: 1.8rem; }
+          .wizard-select-type .wizard-select-option .wizard-select-option-card .wizard-select-option-footer .wizard-select-option-subtitle {
+            font-family: 'Raleway', sans-serif;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            font-weight: 300;
+            letter-spacing: normal;
+            font-size: 1.7rem; } }
+
+.wizard-question .wizard-ssn-type .wizard-input.ssn-1, .wizard-question .wizard-ssn-type .wizard-input.ssn-2, .wizard-question .wizard-ssn-type .wizard-input.ssn-3 {
+  display: inline-block; }
+
+.wizard-question .wizard-ssn-type .wizard-input.ssn-1 {
+  width: 30px; }
+
+.wizard-question .wizard-ssn-type .wizard-input.ssn-2 {
+  width: 20px; }
+
+.wizard-question .wizard-ssn-type .wizard-input.ssn-3 {
+  width: 40px; }
+
+.wizard-question .wizard-ssn-type .ssn-dash {
+  margin: 0px 3px; }
+
+.wizard-question .wizard-telephone-type .wizard-input.tel-1, .wizard-question .wizard-telephone-type .wizard-input.tel-2, .wizard-question .wizard-telephone-type .wizard-input.tel-3 {
+  display: inline-block; }
+
+.wizard-question .wizard-telephone-type .wizard-input.tel-1 {
+  width: 30px; }
+
+.wizard-question .wizard-telephone-type .wizard-input.tel-2 {
+  width: 30px; }
+
+.wizard-question .wizard-telephone-type .wizard-input.tel-3 {
+  width: 40px; }
+
+.wizard-question .wizard-telephone-type .tel-dash {
+  margin: 0px 3px; }
+
+.wizard-question .wizard-zip-code-type .wizard-input.zip-code-1, .wizard-question .wizard-zip-code-type .wizard-input.zip-code-2, .wizard-question .wizard-zip-code-type .wizard-input.zip-code-3, .wizard-question .wizard-zip-code-type .wizard-input.zip-code-4, .wizard-question .wizard-zip-code-type .wizard-input.zip-code-5 {
+  display: inline-block;
+  width: 10px;
+  margin-right: 2px; }

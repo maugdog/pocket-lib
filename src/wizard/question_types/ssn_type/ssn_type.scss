@@ -1,0 +1,16 @@
+.wizard-question {
+  .wizard-ssn-type {
+    .wizard-input {
+      &.ssn-1, &.ssn-2, &.ssn-3 {
+        display: inline-block;
+      }
+
+      &.ssn-1 { width: 30px; }
+      &.ssn-2 { width: 20px; }
+      &.ssn-3 { width: 40px; }
+    }
+    .ssn-dash {
+      margin: 0px 3px;
+    }
+  }
+}

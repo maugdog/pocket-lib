@@ -1,0 +1,11 @@
+.wizard-question {
+  .wizard-zip-code-type {
+    .wizard-input {
+      &.zip-code-1, &.zip-code-2, &.zip-code-3, &.zip-code-4, &.zip-code-5 {
+        display: inline-block;
+        width: 10px;
+        margin-right: 2px;
+      }
+    }
+  }
+}

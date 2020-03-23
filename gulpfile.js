@@ -10,10 +10,10 @@ const del = require('del');
 
 const paths = {
   build: 'build',
-  src: 'src/**/*', // All source files.
+  src: '[src/**/*.js, src/**/*.jsx]', // All source files.
   styles: {
     wizard: {
-      src: ['src/wizard/styles/*.scss', 'src/wizard/**/*.scss', 'node_modules/react-tagsinput/react-tagsinput.css', 'node_modules/react-image-crop/dist/ReactCrop.css'],
+      src: ['src/wizard/styles/*.scss', 'src/wizard/**/*.scss'],
       out: 'wizard.css'
     }
   }
@@ -55,8 +55,8 @@ function buildCSS(cssPaths, target, done) {
 }
 
 gulp.task('generateFiles', gulp.parallel(
-  buildJS
-  //buildCSS(paths.styles.wizard.src, paths.styles.wizard.out) // Wizard
+  buildJS,
+  buildCSS(paths.styles.wizard.src, paths.styles.wizard.out) // Wizard
 ));
 
 // Remove all built files

@@ -1,0 +1,16 @@
+.wizard-question {
+  .wizard-telephone-type {
+    .wizard-input {
+      &.tel-1, &.tel-2, &.tel-3 {
+        display: inline-block;
+      }
+
+      &.tel-1 { width: 30px; }
+      &.tel-2 { width: 30px; }
+      &.tel-3 { width: 40px; }
+    }
+    .tel-dash {
+      margin: 0px 3px;
+    }
+  }
+}
